@@ -1,5 +1,5 @@
 export const AppConstants = {
-    AppName: "Netflix-watchlist-webapp",
+    AppName: "Netflix Watchlist Webapp",
     BaseApiUrl: 'https://localhost:44387/',
     WatchlistJwtToken : 'watchlistJwtToken'
 }

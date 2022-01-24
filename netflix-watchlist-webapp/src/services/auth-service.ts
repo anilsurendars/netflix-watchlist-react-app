@@ -30,6 +30,13 @@ class AuthService {
     logout() {
         localStorage.removeItem(AppConstants.WatchlistJwtToken);
     }
+
+    getCurrentUser = () => {
+        const userStr = localStorage.getItem(AppConstants.WatchlistJwtToken);
+        if (userStr) return JSON.parse(userStr);
+      
+        return null;
+      };
 }
 
 export default new AuthService()
